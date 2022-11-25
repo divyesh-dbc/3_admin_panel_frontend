@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/chat.css" />
+    <script src="https://kit.fontawesome.com/c127a65e59.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <title>
+        Chat
+    </title>
+</head>
+
+<body>
+    <div class="main_page" id="admin_panel">
+        <div class="section left">
+            <div class="title">
+                Admin<i class="fa fa-bars"></i>
+            </div>
+            <div class="list">
+                <ul class="unordered_list">
+                    <li class="list_item">
+                        <div class="active"><i class="fa fa-windows"></i>Dashboard
+                            <i class="fa fa-angle-down float-right"></i>
+                        </div>
+                        <ul class="">
+                            <li class="list_item"><a href="#"><i class="fa-solid fa-chart-simple"></i>Sales</a>
+                            </li>
+                            <li class="list_item"><a href="#"><i class="fa-solid fa-handshake-simple"></i></a></i>CRM
+                            </li>
+                            <li class="list_item active"><a href="#"><i
+                                        class="fa-solid fa-diagram-project"></i></a>Analytics</li>
+                        </ul>
+                    </li>
+                    <li class="list_item"><a href="#"><i class="fa-solid fa-comment-dots"></i></a>Chat</li>
+                    <li class="list_item"><a href="#"><i class="fa-solid fa-envelope"></i></a>Email</li>
+                    <li class="list_item"><a href="#"><i class="fa-solid fa-calendar-days"></i></a>Calendar</li>
+                    <li class="list_item"><a href="#"><i class="fa-solid fa-list-check"></i></a>Task </li>
+                    <li class="list_item"><a href="#"><i class="fa-solid fa-ticket"></i></a>Tickets</li>
+                    <li class="list_item"><a href="#"><i class="fa-solid fa-file"></i></a>File Manager</li>
+                    <li class="list_item"><a href="#"><i class="fa-solid fa-chart-simple"></i></a>Companies</li>
+                    <li class="list_item"><a href="#"><i class="fa-solid fa-lock"></i></a>Authentication</li>
+                    <li class="list_item"><a href="#"><i class="fa-solid fa-gear"></i></a>Settings</li>
+                </ul>
+            </div>
+            <div class="copyrights">Copyright © itoagency</div>
+        </div>
+        <div class="right">
+            <div class="section nevigation">
+                <div class="header">
+                    <div class="title">File Manager</div>
+                    <div class="admin_profile">
+                        <i class="fa fa-bell"></i>
+                        <i class="fa fa-envelope"></i>
+                        <div class="admin_pic"><img src="./assets/img/contributer1.svg" /></div>
+                        <div class="desc">Kevine Harry</div>
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                </div>
+
+                <div class="nav_item">
+                    <div class="nav_list">
+                        <div class="list deactive">Home<i class="fa fa-angle-right ml_10 mr_10"></i></div>
+                        <div class="list">File Manager</div>
+                    </div>
+                    <div class="nav_upload">
+                        <div class="">
+                            <a href="#" id="uploadfile" class="button button_primary ">
+                                <i class="fa fa-plus"></i>Upload File
+                            </a>
+                        </div>
+                        <div class="upload"><i class="fa fa-ellipsis-v"></i></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="admin_body">
+                <div class="users">
+                    <div class="user_list">
+
+                        <div class="active_user">
+                            <div class="active_info">
+                                <div class="title">Active now</div>
+                                <div class="count">20</div>
+                            </div>
+                            <div class="active_profile">
+                                <img class="profile" src="./assets/img/contributer3.svg">
+                                <img class="profile" src="./assets/img/contributer1.svg">
+                                <img class="profile" src="./assets/img/contributer2.svg">
+                                <img class="profile" src="./assets/img/contributer1.svg">
+                            </div>
+                        </div>
+
+                        <div class="search">
+                            <input type="search" class="search_txt" placeholder="Search" />
+                            <i class="fa fa-magnifying-glass"></i>
+                        </div>
+
+                        <div class="chat_list">
+                            <div class="list current">
+                                <div class="user_profile">
+                                    <img class="profile bg" src="./assets/img/contributer3.svg" />
+                                </div>
+                                <div class="message">
+                                    <div class="user_name">Blankann<div class="status status_deactive m_5"></div>
+                                    </div>
+
+                                    <div class="user_message">New message arrive in night..</div>
+                                    <hr />
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div class="user_profile">
+                                    <img class="profile bg" src="./assets/img/contributer3.svg" />
+                                </div>
+                                <div class="message">
+                                    <div class="user_name">Harper<div class="status status_active m_5"></div>
+                                    </div>
+                                    <div class="user_message">New message arrive in night..</div>
+                                    <hr />
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div class="user_profile">
+                                    <img class="profile bg" src="./assets/img/contributer3.svg" />
+                                </div>
+                                <div class="message">
+                                    <div class="user_name">Victoria</div>
+                                    <div class="user_message">New message arrive in night..</div>
+                                    <hr />
+                                </div>
+
+                            </div>
+                            <div class="list">
+                                <div class="user_profile">
+                                    <img class="profile bg" src="./assets/img/contributer3.svg" />
+                                </div>
+                                <div class="message">
+                                    <div class="user_name">Lillian</div>
+                                    <div class="user_message">New message arrive in night..</div>
+                                    <hr />
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div class="user_profile">
+                                    <img class="profile bg" src="./assets/img/contributer3.svg" />
+                                </div>
+                                <div class="message">
+                                    <div class="user_name">Lillian</div>
+                                    <div class="user_message">New message arrive in night..</div>
+                                    <hr />
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div class="user_profile">
+                                    <img class="profile bg" src="./assets/img/contributer3.svg" />
+                                </div>
+                                <div class="message">
+                                    <div class="user_name">Lillian</div>
+                                    <div class="user_message">New message arrive in night..</div>
+                                    <hr />
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div class="user_profile">
+                                    <img class="profile bg" src="./assets/img/contributer3.svg" />
+                                </div>
+                                <div class="message">
+                                    <div class="user_name">Lillian</div>
+                                    <div class="user_message">New message arrive in night..</div>
+                                    <hr />
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div class="user_profile">
+                                    <img class="profile bg" src="./assets/img/contributer3.svg" />
+                                </div>
+                                <div class="message">
+                                    <div class="user_name">Lillian</div>
+                                    <div class="user_message">New message arrive in night..</div>
+                                    <hr />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="user_details">
+                        <div class="header">
+                            <div class="current_user">
+                                <div class="user_profile">
+                                    <img src="./assets/img/contributer3.svg" class="profile sm" />
+                                </div>
+                                <div class="user_info">
+                                    <div class="user_name">
+                                        Blankann
+                                    </div>
+                                    <div class="user_status">
+                                        <div class="status status_active mtr_5"></div> Active Now
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="communication">
+                                <i class="fa-solid fa-phone"></i>
+                                <i class="fa-solid fa-video"></i>
+                                <i class="fa-solid fa-bell"></i>
+                            </div>
+                        </div>
+
+                        <div class="chat_body">
+                            <div class="received">
+                                <div class="user_profile">
+                                    <img src="./assets/img/contributer3.svg" class="profile sm"/>
+                                </div>
+                                <div class="chat">
+                                    <div class="time"> 7:30 AM, 31 JAN</div>
+                                    <div class="chat_txt">
+                                        new message arrive in night and here is the total text read and replay.new
+                                        message arrive in night and here is the total text read and replay.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sent">
+                                <div class="chat">
+                                    <div class="sent_msg_div">
+                                        <div class="time"> 7:30 AM, 31 JAN</div>
+                                        <div class="chat_txt">
+                                            new message arrive in night and here is the total text read and replay.
+                                        </div>
+                                    </div>
+                                    <div class="receive_status mtr_5"><div class="seen"><i class="fa-solid fa-check-double"></i>Seen 7: 31 AM</div></div>
+                                </div>
+                            </div>
+
+                            <div class="received">
+                                <div class="user_profile">
+                                    <img src="./assets/img/contributer3.svg" class="profile sm"/>
+                                </div>
+                                <div class="chat">
+                                    <div class="time"> 7:30 AM, 31 JAN</div>
+                                    <div class="chat_txt">
+                                        <img class="ml_10" src="./assets/img/Rectangle 32.svg"/>
+                                        <img class="ml_10" src="./assets/img/Rectangle33.svg">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sent">
+                                <div class="chat">
+                                    <div class="sent_msg_div">
+                                        <div class="time"> 7:30 AM, 31 JAN</div>
+                                        <div class="chat_txt">
+                                            new message arrive in night and here is the total text read and replay.
+                                        </div>
+                                    </div>
+                                    <div class="receive_status mtr_5"><div class="deliver"><i class="fa-solid fa-check-double"></i>deliver 7: 48 AM</div></div>
+                                </div>
+                            </div>
+                            <div class="received">
+                                <div class="user_profile">
+                                    <img src="./assets/img/contributer3.svg" class="profile sm"/>
+                                </div>
+                                <div class="chat">
+                                    <div class="time">7:45 AM, 31 JAN</div>
+                                    <div class="chat_txt">
+                                       New message arrive in night
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sent">
+                                <div class="chat">
+                                    <div class="sent_msg_div">
+                                        <div class="time"> 7:48 AM, 31 JAN</div>
+                                        <div class="chat_txt">
+                                            new message arrive in night and here is the total text read and replay.
+                                        </div>
+                                    </div>
+                                    <div class="receive_status mtr_5"><div class="sent"><i class="fa-solid fa-check"></i>send 7: 50 AM</div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat_footer">
+                            <div class="ft_left">
+                                <div class="text_div">
+                                    <textarea rows="1" cols="50"  placeholder="Type something"></textarea>
+                                </div>
+                                <div class="attachment_div">
+                                    <i class="fa-solid fa-paperclip"></i>
+                                    <i class="fa-regular fa-face-smile"></i>
+                                    <i class="fa-solid fa-image"></i>
+                                    <i class="fa-solid fa-microphone"></i>
+                                </div>
+                            </div>
+                            <div class="ft_right">
+                                <a href="#"><button class="send_button">Send <i class="fa-solid fa-paper-plane"></i></button></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+        <script>
+
+            $(document).ready(function () {
+                $(document).on("click", "#uploadfile", function () {
+                    $("#popup").modal({
+                        fadeDuration: 100
+                    });
+                })
+            })
+
+        </script>
+
+        <div id="popup" class="modal">
+            <div class="upload">
+                <div class="upload_txt">Upload Files</div>
+                <a href="#" rel="modal:close"><i class="fa fa-xmark"></i></a>
+            </div>
+            <div class="browse_box">
+                <!-- <input type="file" class="browse_box"> -->
+                <div class="cloud_icon">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <div class="cloud_desc">
+
+                        Drop files here or <a href="#">Browse</a>
+                    </div>
+                </div>
+            </div>
+            <div class="form_control">
+                <form id="popup_form" novalidate>
+                    <div class="control_item">
+                        <div class="control pr_15">
+                            <label for="filename" class="label">File Name</label>
+                            <input type="text" placeholder="File Name" class="input" />
+                        </div>
+                        <div class="control pl_15">
+                            <label for="contribution" class="label">Contribution</label>
+                            <input type="text" placeholder="Invite Someone" class="input" />
+                        </div>
+                    </div>
+                    <div class="control_btn">
+                        <a href="#" rel="modal:close" class="popup_button primary_light">Cancle</a>
+                        <a href="#" class="popup_button primary_dark ml_10">Save</a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+</body>
+
+</html>
